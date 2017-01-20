@@ -1,0 +1,10 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.wordWrap": true,
+    "files.insertFinalNewline": true,
+    "rust.useNewErrorFormat": true,
+    "telemetry.enableTelemetry": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "editor.wrappingColumn": 120,
+    "window.zoomLevel": 0
+}
