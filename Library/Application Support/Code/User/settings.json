@@ -1,10 +1,24 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "editor.wordWrap": true,
+    "diffEditor.ignoreTrimWhitespace": false,
     "files.insertFinalNewline": true,
-    "rust.useNewErrorFormat": true,
+    "files.trimTrailingWhitespace": true,
     "telemetry.enableTelemetry": false,
+    "window.title": "${activeEditorMedium}${separator}${rootName}",
+
+    "editor.acceptSuggestionOnEnter": true,
+    "editor.cursorBlinking": "smooth",
+    "editor.dragAndDrop": true,
+    "editor.renderControlCharacters": false,
+    "editor.renderWhitespace": "boundary",
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 120,
+    "editor.minimap.enabled": true,
+    "editor.minimap.renderCharacters": false,
+    "editor.scrollBeyondLastLine": false,
+    
+    "julia.executablePath": "/Applications/Julia-0.5.app/Contents/Resources/julia/bin/julia",
+    "rust.useNewErrorFormat": true,
     "vsicons.dontShowNewVersionMessage": true,
-    "editor.wrappingColumn": 120,
-    "window.zoomLevel": 0
+    
 }
