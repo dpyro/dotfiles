@@ -5,20 +5,52 @@
     "files.trimTrailingWhitespace": true,
     "telemetry.enableTelemetry": false,
     "window.title": "${activeEditorMedium}${separator}${rootName}",
+    "files.watcherExclude": {
+        "**/node_modules/**": false
+    },
+
 
     "editor.acceptSuggestionOnEnter": true,
     "editor.cursorBlinking": "smooth",
     "editor.dragAndDrop": true,
     "editor.renderControlCharacters": false,
-    "editor.renderWhitespace": "boundary",
+    "editor.renderWhitespace": "all",
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 120,
     "editor.minimap.enabled": true,
     "editor.minimap.renderCharacters": false,
     "editor.scrollBeyondLastLine": false,
-    
+
+    "vsicons.projectDetection.autoReload": true,
+    "workbench.editor.enablePreview": false,
+    "workbench.iconTheme": "vscode-icons",
+
+    // Sync
+    "sync.gist": "6cd2a1b3f72fe1a15c47362f47865609",
+    "sync.lastUpload": "2017-03-01T23:42:40.347Z",
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
+    "sync.lastDownload": "",
+    "sync.version": 251,
+    "sync.showSummary": true,
+    "sync.forceDownload": false,
+    "sync.anonymousGist": false,
+
+    // Language settings
     "julia.executablePath": "/Applications/Julia-0.5.app/Contents/Resources/julia/bin/julia",
     "rust.useNewErrorFormat": true,
     "vsicons.dontShowNewVersionMessage": true,
-    
+
+    // File settings
+    "files.associations": {
+      "*.js": "javascriptreact"
+    },
+    "[javascriptreact]": {
+        "editor.tabSize": 2
+    },
+    "[typescriptreact]": {
+        "editor.tabSize": 2
+    },
+    "path-intellisense.showHiddenFiles": true,
+    "editor.autoClosingBrackets": false
 }
