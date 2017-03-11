@@ -17,7 +17,7 @@ fi
 # function _config() {
 #     local ti_sgr0="$( { tput sgr0 || tput me ; } 2>/dev/null )"
 #     local ti_bold="$( { tput bold || tput md ; } 2>/dev/null )"
-#     local ti_setat() { tput setaf "$1" ; }
+#     local ti_setaf() { tput setaf "$1" ; }
 #     local ti_setab() { tput setab "$!" ; }
 
 #     local BLACK=${OPEN_ESC}$(ti_setaf 0)${CLOSE_ESC}                 # 0
@@ -182,7 +182,38 @@ fi
 #     fi
 # }
 
-export PS1='[\A] \h:\W \u \$ '
+function ti_setaf { tput setaf "$1" ; }
+function ti_setab { tput setab "$1" ; }
+
+# PS1
+function _config() {
+    local ti_sgr0="$( { tput sgr0 || tput me ; } 2>/dev/null )"
+    local ti_bold="$( { tput bold || tput md ; } 2>/dev/null )"
+    local BLACK=${OPEN_ESC}$(ti_setaf 0)${CLOSE_ESC}                 # 0
+    local BOLD_GRAY=${OPEN_ESC}${ti_bold}$(ti_setaf 0)${CLOSE_ESC}   # 0
+    local RED=${OPEN_ESC}$(ti_setaf 1)${CLOSE_ESC}                   # 1
+    local BOLD_RED=${OPEN_ESC}${ti_bold}$(ti_setaf 1)${CLOSE_ESC}    # 1
+    local GREEN=${OPEN_ESC}$(ti_setaf 2)${CLOSE_ESC}                 # 2
+    local BOLD_GREEN=${OPEN_ESC}${ti_bold}$(ti_setaf 2)${CLOSE_ESC}  # 2
+    local YELLOW=${OPEN_ESC}$(ti_setaf 3)${CLOSE_ESC}                # 3
+    local BOLD_YELLOW=${OPEN_ESC}${ti_bold}$(ti_setaf 3)${CLOSE_ESC} # 3
+    local BLUE=${OPEN_ESC}$(ti_setaf 4)${CLOSE_ESC}                  # 4
+    local BOLD_BLUE=${OPEN_ESC}${ti_bold}$(ti_setaf 4)${CLOSE_ESC}   # 4
+    local PURPLE=${OPEN_ESC}$(ti_setaf 5)${CLOSE_ESC}                # 5
+    local PINK=${OPEN_ESC}${ti_bold}$(ti_setaf 5)${CLOSE_ESC}        # 5
+    local CYAN=${OPEN_ESC}$(ti_setaf 6)${CLOSE_ESC}                  # 6
+    local BOLD_CYAN=${OPEN_ESC}${ti_bold}$(ti_setaf 6)${CLOSE_ESC}   # 6
+    local WHITE=${OPEN_ESC}$(ti_setaf 7)${CLOSE_ESC}                 # 7
+    local BOLD_WHITE=${OPEN_ESC}${ti_bold}$(ti_setaf 7)${CLOSE_ESC}  # 7
+    NO_COL=${OPEN_ESC}${ti_sgr0}${CLOSE_ESC}
+
+    export PS1="$BOLD_CYAN[\A]$NO_COL $PINK\W$NO_COL \u $BOLD_WHITE\$$NO_COL "
+}
+
+_config
+
+unset -f ti_setaf
+unset -f ti_setab
 
 # Bash set
 set -o notify
