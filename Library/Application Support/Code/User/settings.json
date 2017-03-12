@@ -52,5 +52,9 @@
         "editor.tabSize": 2
     },
     "path-intellisense.showHiddenFiles": true,
-    "editor.autoClosingBrackets": false
+    "editor.autoClosingBrackets": false,
+    "[html]": {
+        "editor.detectIndentation": false,
+        "editor.tabSize": 2
+    }
 }
