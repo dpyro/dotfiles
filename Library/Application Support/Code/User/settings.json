@@ -1,16 +1,8 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "diffEditor.ignoreTrimWhitespace": false,
-    "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
-    "telemetry.enableTelemetry": false,
-    "window.title": "${activeEditorMedium}${separator}${rootName}",
-    "files.watcherExclude": {
-        "**/node_modules/**": false
-    },
-
-
+    // Editor
     "editor.acceptSuggestionOnEnter": true,
+    "editor.autoClosingBrackets": false,
     "editor.cursorBlinking": "smooth",
     "editor.dragAndDrop": true,
     "editor.renderControlCharacters": false,
@@ -21,9 +13,41 @@
     "editor.minimap.renderCharacters": false,
     "editor.scrollBeyondLastLine": false,
 
-    "vsicons.projectDetection.autoReload": true,
+    // Miscellaneous
     "workbench.editor.enablePreview": false,
     "workbench.iconTheme": "vscode-icons",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "telemetry.enableTelemetry": false,
+    "window.title": "${activeEditorMedium}${separator}${rootName}",
+    "path-intellisense.showHiddenFiles": true,
+    "files.watcherExclude": {
+        "**/node_modules/**": false
+    },
+
+    // File settings
+    "files.associations": {
+        "*.js": "javascriptreact",
+        ".pylintrc": "ini"
+    },
+    "[html]": {
+        "editor.detectIndentation": false,
+        "editor.tabSize": 2
+    },
+    "[javascriptreact]": {
+        "editor.tabSize": 2
+    },
+    "[typescriptreact]": {
+        "editor.tabSize": 2
+    },
+
+    // Extensions
+    // Languages
+    "vsicons.projectDetection.autoReload": true,
+    "julia.executablePath": "/Applications/Julia-0.5.app/Contents/Resources/julia/bin/julia",
+    "rust.useNewErrorFormat": true,
+    "vsicons.dontShowNewVersionMessage": true,
 
     // Sync
     "sync.gist": "6cd2a1b3f72fe1a15c47362f47865609",
@@ -36,25 +60,4 @@
     "sync.forceDownload": false,
     "sync.anonymousGist": false,
 
-    // Language settings
-    "julia.executablePath": "/Applications/Julia-0.5.app/Contents/Resources/julia/bin/julia",
-    "rust.useNewErrorFormat": true,
-    "vsicons.dontShowNewVersionMessage": true,
-
-    // File settings
-    "files.associations": {
-      "*.js": "javascriptreact"
-    },
-    "[javascriptreact]": {
-        "editor.tabSize": 2
-    },
-    "[typescriptreact]": {
-        "editor.tabSize": 2
-    },
-    "path-intellisense.showHiddenFiles": true,
-    "editor.autoClosingBrackets": false,
-    "[html]": {
-        "editor.detectIndentation": false,
-        "editor.tabSize": 2
-    }
 }
