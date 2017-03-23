@@ -28,14 +28,18 @@
 
     // File settings
     "files.associations": {
-        "*.js": "javascriptreact",
         ".pylintrc": "ini"
     },
     "[html]": {
-        "editor.detectIndentation": false,
+        "editor.tabSize": 2
+    },
+    "[javascript]": {
         "editor.tabSize": 2
     },
     "[javascriptreact]": {
+        "editor.tabSize": 2
+    },
+    "[typescript]": {
         "editor.tabSize": 2
     },
     "[typescriptreact]": {
@@ -43,21 +47,15 @@
     },
 
     // Extensions
-    // Languages
-    "vsicons.projectDetection.autoReload": true,
-    "julia.executablePath": "/Applications/Julia-0.5.app/Contents/Resources/julia/bin/julia",
-    "rust.useNewErrorFormat": true,
     "vsicons.dontShowNewVersionMessage": true,
+    "vsicons.projectDetection.autoReload": true,
 
-    // Sync
-    "sync.gist": "6cd2a1b3f72fe1a15c47362f47865609",
-    "sync.lastUpload": "2017-03-01T23:42:40.347Z",
-    "sync.autoDownload": false,
-    "sync.autoUpload": false,
-    "sync.lastDownload": "",
-    "sync.version": 251,
-    "sync.showSummary": true,
-    "sync.forceDownload": false,
-    "sync.anonymousGist": false,
+    // Languages
+    "clang.cxxflags": [
+        "-Wdeprecated-declarations"
+    ],
+    "julia.executablePath": "/Applications/Julia-0.5.app/Contents/Resources/julia/bin/julia",
+    "python.autoComplete.extraPaths": ["/usr/local/Cellar/python3/3.6.0/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages"],
+    "rust.useNewErrorFormat": true
 
 }
