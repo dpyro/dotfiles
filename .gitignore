@@ -1,8 +1,10 @@
-/*
+*
 !/.dircolors
 !/.gitignore
 !/.gvimrc
+!/.inputrc
 !/.ipython/profile_default/ipython_config.py
+!/.npmrc
 !/.profile
 !/.pylintrc
 !/.vimrc
